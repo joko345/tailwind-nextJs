@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply bg-stone-500;
+  @apply bg-slate-100;
 }
 
 h1, h2, h3 {

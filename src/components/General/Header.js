@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="border-b border-slate-950 py-5"> {/* Ganti <headers> dengan <header> */}
-            <div className="container mx-auto flex">
+        <header className="border-b border-slate-950 py-5 mb-5"> {/* Ganti <headers> dengan <header> */}
+            <div className="container mx-auto flex justify-between">
                 <div className="logo">Mathilda</div>
                 <ul className="flex gap-5">
                     <li>
@@ -22,7 +22,7 @@ export default function Header() {
                 </ul>
                 <div>
                     <Link href="/">
-                        Contact
+                        <div className="border border-slate-500 p-1 px-5">Contact</div>
                     </Link>
                 </div>
             </div>
