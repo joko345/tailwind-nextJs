@@ -1,3 +1,4 @@
+Link Vercel= https://tailwind-next-js-eight.vercel.app/
 npx tailwindcss init -p
 
 py vertical/atas bawah padding
