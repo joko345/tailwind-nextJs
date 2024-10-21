@@ -3,7 +3,8 @@
     "baseUrl": ".",  // Menentukan root dari proyek
     "paths": {
       "@/*": ["./*"],
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/data/*": ["src/data/*"]
     }
   }
 }

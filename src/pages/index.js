@@ -1,10 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import AddHomeWorkIcon from "@mui/icons-material/AddHomeWork";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-12 ">
+      <Head>
+        <title>Home</title>
+        <meta name="description" content="Home Page"></meta>
+      </Head>
       <div className="grid place-content-center lg:text-left text-center">
         <div>
           <h1 title="Jon Gate" className="text-6xl leading-[80px]">

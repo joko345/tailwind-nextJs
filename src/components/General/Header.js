@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { menu } from "@/src/data/menu";
 
 export default function Header() {
   return (
@@ -7,24 +8,19 @@ export default function Header() {
       {" "}
       {/* Ganti <headers> dengan <header> */}
       <div className="container mx-auto flex justify-between lg:p-0 p-5">
-        <div className="logo">Mathilda</div>
+        <div className="logo">
+          <Link href="/">Mathilda</Link>
+        </div>
         <ul className="flex gap-5">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about-me">About Me</Link>
-            {/* about-me merujuk nama file */}
-          </li>
-          <li>
-            <Link href="/">Work</Link>
-          </li>
-          <li>
-            <Link href="/">Hobby</Link>
-          </li>
+          {menu.map((value, index) => (
+            <li key={index}>
+              {/* value dari datamenu */}
+              <Link href={value.href}>{value.label}</Link>
+            </li>
+          ))}
         </ul>
         <div>
-          <Link href="/">
+          <Link href="/contact">
             <div className="border border-slate-500 p-1 px-5">Contact</div>
           </Link>
         </div>
